@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#about {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #69c5f3;
+    box-shadow: 0 2px 4px rgba(3, 255, 20, 0.1);
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6347; 
+}
+
+.contenar {
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-col-1 {
+    flex-basis: 40%;
+    text-align: center;
+}
+
+.about-col-1 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+    padding: 20px;
+}
+
+.sub-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tab-titles {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.tab-links {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.active-link {
+    color: #fff;
+    background-color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.active-tab {
+    display: block;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .about-col-1 {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about-col-2 {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .tab-titles {
+        flex-direction: column;
+    }
+
+    .tab-links {
+        margin-bottom: 10px;
+    }
+}
